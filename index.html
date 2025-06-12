@@ -73,9 +73,9 @@
 
 </div>
  <div id="competency-view">
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-7">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
       <!-- Skills Assessment -->
-      <div class="bg-white p-6 rounded-lg shadow-md md:col-span-7 col-span-12">
+      <div class="bg-white p-6 rounded-lg shadow-md md:col-span-6 col-span-12">
         <div class="flex justify-between items-center mb-2 flex-wrap ">
           <h3 class="text-2xl text-[#071D49]  font-bold">TEAM OVERALL COMPETENCY VIEW</h3>
           <div class="relative flex bg-gray-200 rounded-full p-1 w-max">
@@ -91,7 +91,7 @@
           <span class="text-[#0066F5] text-sm"><span class="inline-block w-2.5 h-1.5 bg-[#0066F5] mr-1.5 rotate-90"></span> Role Benchmark</span>
           <span class="text-green-900 text-sm">
   <span class="inline-block w-0 h-0 border-l-[6px] border-r-[6px] border-b-[13px] border-l-transparent border-r-transparent border-b-current mr-1.5"></span>
-  Industry Role Benchmark
+  Industry Benchmark
 </span>
 
         </div>
@@ -109,7 +109,7 @@
      
 
       <!-- Performance Summary -->
-     <div class="bg-white p-6 rounded-lg shadow-md md:col-span-5">
+     <div class="bg-white p-6 rounded-lg shadow-md md:col-span-6">
   <h3 class="text-2xl text-[#071D49] font-bold mb-4 text-left">
     TEAM's STRENGTHS & DEVELOPMENT PRIORITIES
   </h3>
@@ -303,17 +303,17 @@
       {
         skill: "BUSINESS & FINANCIAL ACUMEN",
         ae: { gap: 20, mid: 30, strength: 50 },
-        dir: { gap: 10, mid: 20, strength: 70 }
+        dir: { gap: 20, mid: 30, strength: 50 }
       },
       {
         skill: "ANALYSIS TO INSIGHTS",
         ae: { gap: 15, mid: 45, strength: 40 },
-        dir: { gap: 5, mid: 30, strength: 65 }
+        dir: { gap: 15, mid: 45, strength: 40 }
       },
       {
         skill: "BRAND & PORTFOLIO VALUE",
         ae: { gap: 10, mid: 40, strength: 50 },
-        dir: { gap: 8, mid: 22, strength: 70 }
+        dir: { gap: 10, mid: 40, strength: 50 }
       },
       {
         skill: "STAKEHOLDER ALIGNMENT",
@@ -344,7 +344,7 @@
       row.className = "flex items-center space-x-4";
 
       row.innerHTML = `
-        <div class="w-64 text-sm font-medium text-gray-700">${item.skill}</div>
+        <div class="w-[400px] text-sm font-medium text-[#948979] py-2">${item.skill}</div>
 
         <!-- AE Bar -->
         <div class="flex w-full h-4 rounded overflow-hidden shadow-sm">
@@ -448,7 +448,7 @@
       const scaleRow = document.createElement("div");
       scaleRow.className = "grid grid-cols-6 gap-4 mb-4 text-xs text-gray-500 px-1 mt-[50px]";
       scaleRow.innerHTML = `<div class="col-span-2"></div><div class="col-span-4 relative h-5">
-        <div class="absolute top-0 left-0 w-full flex justify-between text-center text-xs text-gray-500">
+        <div class="absolute top-0 left-0 w-full flex justify-between text-center font-semibold text-sm text-gray-600">
           <div class="w-1/3">Foundational</div>
           <div class="w-1/3">Advanced</div>
           <div class="w-1/3">Mastery</div></div></div>`;
